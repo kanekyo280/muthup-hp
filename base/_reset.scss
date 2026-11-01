@@ -26,5 +26,55 @@ button {
     background: transparent;
     color: inherit;
     font: inherit;
-    cursor: pointer;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+
+ul,
+ol {
+    list-style: none; 
+}
+
+html {
+    font-family: sans-serif; 
+}
+
+
+
+table {
+    border-collapse: collapse; 
+}
+
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+    outline: 2px solid; 
+}
+
+p {
+    overflow-wrap: break-word;
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+    }
 }
